@@ -2,10 +2,10 @@ let myImage = document.querySelector('img');
 
 myImage.onclick = function() {
     let mySrc = myImage.getAttribute('src');
-    if(mySrc === '/home/roque/Documents/prg/web-projects/test-site/images/foto-ficus1.jpg') {
-      myImage.setAttribute('src','/home/roque/Documents/prg/web-projects/test-site/images/foto-ficus2.jpg');
+    if(mySrc === 'https://roquemolina.github.io/images/foto-ficus1.jpg') {
+      myImage.setAttribute('src','https://roquemolina.github.io/images/foto-ficus2.jpg');
     } else {
-      myImage.setAttribute('src','/home/roque/Documents/prg/web-projects/test-site/images/foto-ficus1.jpg');
+      myImage.setAttribute('src','https://roquemolina.github.io/images/foto-ficus1.jpg');
     }
 }
 

@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+
+    font-family: 'Bebas Neue', cursive;
+    
+
+  }
+
+  /* Structure */
+
+  html {
+      height: auto;
+  }
+  body {
+    width: 90%;
+    margin: 2em auto;
+    font: 1em/1.3 Arial, Helvetica, sans-serif;
+    background: rgb(142,142,142);
+    background: linear-gradient(180deg, rgba(142,142,142,1) 0%, rgba(255,255,255,1) 4%, rgba(255,255,255,1) 96%, rgba(142,142,142,1) 100%);
+    
+  }
+
+  a:link,
+  a:visited {
+    color: #333;
+  }
+
+  nav ul,
+  aside ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  nav a:link,
+  nav a:visited {
+    background-color: rgba(207, 232, 220, 0.2);
+    border: 2px solid rgb(79, 185, 227);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 0.2rem;
+    color: #333;
+    font-weight: bold;
+    border-radius: 0.4rem;
+  }
+
+  nav a:hover {
+    background-color: rgba(207, 232, 220, 0.7);
+  }
+
+  .related {
+    background-color: rgba(79, 185, 227, 0.3);
+    border: 1px solid rgb(79, 185, 227);
+    padding: 10px;
+  }
+
+  .sidebar {
+    background-color: rgba(207, 232, 220, 0.5);
+    padding: 10px;
+  }
+
+  article {
+    margin-bottom: 1em;
+  }
+
+  @media screen and (min-width: 40em) {
+  article {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    flex: 1;
+  }
+}
+@media screen and (min-width: 70em) {
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 20px;
+}
+
+article {
+    margin-bottom: 0;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    margin-top: 2em;
+}
+}
+
+/* Fonts sizes*/
+
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+
+/* Image */
+
+.imageme {
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 30%;
+    height: auto;
+    border-radius: 0.4rem;
+    background-color: rgb(207,232,220);
+}

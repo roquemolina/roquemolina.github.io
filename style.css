@@ -126,4 +126,5 @@ header {
     position: sticky;
     top: 0px;
     background-color: white;
+    border-radius: 1rem;
 }

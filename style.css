@@ -115,3 +115,9 @@ h2 {
     border-radius: 0.4rem;
     background-color: rgb(207,232,220);
 }
+
+/*Image*/
+
+img {
+    border-radius: 1em;
+}

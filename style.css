@@ -9,7 +9,7 @@
   /* Structure */
 
   html {
-      height: auto;
+      height: fill;
   }
   body {
     width: 90%;

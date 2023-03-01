@@ -37,7 +37,7 @@ export default function formValidations() {
         $response = document.querySelector('.contact-form-response');
         $loader.classList.remove('none');
 
-        fetch("../assets/send_mail.php", {
+        fetch("https://formsubmit.co/ajax/roquenicolasmolina@gmail.com", {
             method: "POST",
             headers: { 
                 'Content-Type': 'application/json',

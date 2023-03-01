@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Maze API</title>
+</head>
+<style>
+    html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    body {
+        margin: 2rem;
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .none {
+        display: none;
+    }
+    .loader {
+        
+        text-align: center;
+        justify-content: center;
+        text-align: center;
+    }
+    input {
+        display: grid;
+    }
+</style>
+<body>
+    <h1>TV Maze API test</h1>
+    <input type="search" placeholder="Search TV show..." id="query">
+    <div class="loader none">
+        <img src="tail-spin.svg" alt="Loading">
+    </div>
+    <main></main>
+    <script>
+        let query = document.querySelector("#query"),
+        $main = document.querySelector('main'),
+        $loader = document.querySelector('.loader');
+        
+        async function getTVShow(term) {
+            try {
+                $loader.classList.remove('none');
+                $main.innerHTML = '';
+
+                const response = await fetch(`https://api.tvmaze.com/search/shows?q=${term}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error: ${response.status}`);
+                }
+                const data = await response.json();
+
+                if(data.length === 0) {
+                    $loader.classList.add('none');
+                    $main.innerHTML = '<p>No mathces for your query</p>';
+                } else {
+                    const fragment = new DocumentFragment();
+                    data.forEach(el => {
+                        const h2 = document.createElement('h2');
+                        h2.innerText = el.show.name;
+                        const img = document.createElement('img');
+                        if (el.show.image !== null) {
+                            img.setAttribute('src', el.show.image.medium);
+                            img.setAttribute('alt', el.show.name);
+                            } else {
+                                img.setAttribute('alt', `${el.show.name} image not available`);
+                        };
+                        const div = document.createElement('div');
+                        el.show.summary !== null ? div.innerHTML = el.show.summary : div.innerHTML = `${el.show.name} sumary not available`;
+                        const a = document.createElement('a');
+                        if (el.show.url !== null) {
+                            a.setAttribute('href', el.show.url);
+                            a.setAttribute('target', "_blank");
+                            a.textContent = 'More info...'
+                            } else {
+                                a.textContent = 'More info nos available...'
+                        };
+                        fragment.append(h2, img, div, a);
+                    })
+                    $loader.classList.add('none');
+                    $main.append(fragment);
+                }
+            }
+            catch (error) {
+                console.error(`Could not get TV show: ${error}`);
+            }
+        }
+
+        query.addEventListener('change', e => {
+            getTVShow(e.target.value.toLowerCase());
+        });
+        
+    </script>
+</body>
+</html>

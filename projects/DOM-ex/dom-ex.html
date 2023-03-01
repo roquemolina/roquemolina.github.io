@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex DOM!</title>
+    <link href="hamburgers.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Exercises DOM</h1>
+        </div>
+    </header>
+    <button class="panel-btn hamburger hamburger--spring" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+    </button>
+    <button class=" hidden scroll-btn hamburger hamburger--arrow is-active" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+
+    <button class="dark-btn" type="button"><i id='dark-mode-icon' class="fa fa-moon-o" style="font-size:30px"></i></button>
+
+    <aside class="panel">
+        <nav class="menu">
+            <a href="#seccion1">Digital Clock & Alarm</a>
+            <a href="#seccion2">Keyboard Event</a>
+            <a href="#seccion3">Countdown</a>
+            <a href="#seccion4">Responsive JavaScript</a>
+            <a href="#seccion5">Responsive Tester</a>
+            <a href="#seccion6">Device Info</a>
+            <a href="#seccion7">Conection Info</a>
+            <a href="#seccion8">Camera Detector</a>
+            <a href="#seccion9">Geolocatio</a>
+            <a href="#seccion10">Images Filter</a>
+            <a href="#seccion11">Pick Random</a>
+            <a href="#seccion12">Responsive Slider</a>
+            <a href="#seccion13">Inteligent Video</a>
+            <a href="#seccion14">Form Validation</a>
+            <a href="#seccion15">Speech</a>
+        </nav>
+    </aside>
+    <main class="data-dark">
+        <section id="seccion1" class="section">
+            <h2>Digital Clock & Alarm</h2>
+            <h2 id="clock"></h2>
+            <button id="start-clock" type="button">Start Clock</button>
+            <button id="stop-clock" type="button">Stop Clock</button>
+            <button id="start-alarm" type="button">Start Alarm</button>
+            <button id="stop-alarm" type="button">Stop Alarm</button>
+        </section>
+        <section id="seccion2" class="section">
+            <h2>Keyboard Events</h2>
+            <p>Press W, A, S, D to move the ball</p>
+            <p>Press Alt + A (for alert), Alt + P (for promp) or Alt + C (for confirm) </p>
+            <canvas id="canvas-keys"></canvas>
+        </section>
+        <section id="seccion3" class="section">
+            <h2>Countdown</h2>
+            <h2 id="countdown"></h2>
+        </section>
+        <section id="seccion4" class="section">
+            <h2>Responsive JavaScript</h2>
+            <div id="youTube">
+            </div>
+            <div id="gMaps">
+            </div>
+        </section>
+        <section id="seccion5" class="section">
+            <h2>Responsive Tester</h2>
+            <form id="tester-form">
+                  <input type="url" name="url" placeholder="Enter an url" required>
+                  <br>
+                  <input type="number" name="width" placeholder="Width" value="" required >
+                  <br>
+                  <input type="number" name="heigth" placeholder="Heigth" value="" required>
+                  <br>
+                  <div>
+                    <input name="test" type="submit" value="Test">
+                    <br>
+                    <input name="close" type="button" value="Close">
+                  </div>
+              </form>
+
+        </section>
+        <section id="seccion6" class="section">
+            <h2>Device Info <br> (User Agent)</h2>
+            <div id="user-device"></div>
+        </section>
+        <section id="seccion7" class="section">
+            <h2>Conection Status</h2>
+            <p>It will notify you with a sign if the connection is lost</p>
+                <h1 id="conection-msg"></h1>
+        </section>
+        <section id="seccion8" class="section">
+            <h2>Camera Detector</h2>
+            <video id="show"></video>
+        </section>
+        <section id="seccion9" class="section">
+            <h2>Geolocation</h2>
+            <div id="geolocation-info">
+                <p id="status"></p>
+                <a id="map-link" target="_blank"></a>
+            </div>
+        </section>
+        <section id="seccion10" class="section">
+            <h2>Image filter</h2>
+            <input type="search" id="filter" placeholder="Filter">
+            <div class="cards"></div>
+            <template id = 'template-card'>
+                <figure class = 'card'>
+                    <img>
+                    <figcaption></figcaption>
+                </figure>
+            </template>
+        </section>
+        <section id="seccion11" class="section">
+            <h2>Digital random</h2>
+            <p>Winner will be shown on console</p>
+            <div class="sorteo"></div>
+            <br>
+            <input type="button" value="Show winner on console" id="pick-button">
+        </section>
+        <section id="seccion12" class="section">
+            <h2>Responsive Slider</h2>
+            <div class="slider">
+                <div class="slider-slides">
+                    <div class="slider-slide active">
+                        <img src="https://placeimg.com/600/400/animals">
+                    </div>
+                    <div class="slider-slide">
+                        <h4>Slide 2</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quam inventore cumque odio provident aliquid quia optio vero asperiores beatae enim, possimus laborum illum magni quae? Dolor maiores expedita modi?</p>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="https://placeimg.com/600/400/nature">
+                    </div>
+                    <div class="slider-slide">
+                        <h4>Slide 4</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quam inventore cumque odio provident aliquid quia optio vero asperiores beatae enim, possimus laborum illum magni quae? Dolor maiores expedita modi?</p>
+                    </div>
+                </div>
+                <div class="slider-btns">
+                    <a href="#" class="prev">&laquo;</a>
+                    <a href="#" class="next">&raquo;</a>
+                </div>
+            </div>
+        </section>
+        <section id="seccion13" class="section">
+            <h2>Inteligent video</h2>
+            <h3>intersectionObserver & visibilityChange</h3>
+            <div class="intelligent-video" data-smart-video>
+                <video controls loop width="250">
+                    <source src="./assets/video-ex.mp4" type="video/webm">
+                </video>
+            </div>
+            <div class="intelligent-video2" data-smart-video>
+                <video controls loop width="250">
+                    <source src="./assets/video-ex.mp4" type="video/webm">
+                </video>
+            </div>
+        </section>
+        <section id="seccion14" class="section">
+            <h2>Form Validation</h2>
+            <form class="form-validation" target="_blank">
+                <legend>Send your comment</legend>
+                <input type="text" name="name" pattern="(^[a-z A-Z ,.'-]+$)" placeholder="Your Name" title="Only accepts a-z, A-Z, , . ' - " required>
+                <input type="text" name="email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" placeholder="Your e-mail" title='Incorrect e-mail' required>
+                <input type="text" name="subject" placeholder="Subject" title="Subject is required" required>
+                <textarea name="comment" rows="5" placeholder="Comment" title="Comment max length is 255" data-pattern="^.{1,255}$" required></textarea>
+                <input type="submit" value="Submit">
+                <div class="contact-form-loader none">
+                    <img src="assets/tail-spin.svg" alt="Loading">
+                </div>
+                <div class="contact-form-response none">
+                    <p>Info has been sent</p>
+                </div>
+            </form>
+        </section>
+        <section id="seccion15" class="section">
+            <h2>Speech synthesizer</h2>
+            <p>Enter some text in the input below and press return to hear it. change voicesusing the dropdown menu.
+            </p>
+            <form id="speech-form">
+                <input type="text" class="txt" />
+                <div>
+                    <label for="rate">Rate</label>
+                    <input type="range" min="0.5" max="2" value="1" step="0.1" id="rate" />
+                    <div class="rate-value">1</div>
+                    <div class="clearfix"></div>
+                </div>
+                <div>
+                    <label for="pitch">Pitch</label>
+                    <input type="range" min="0" max="2" value="1" step="0.1" id="pitch" />
+                    <div class="pitch-value">1</div>
+                    <div class="clearfix"></div>
+                </div>
+                <select id="speech-select"></select>
+            </form>
+        </section>
+    </main>
+    <script src="index_dom.js" type="module"></script>
+    
+</body>
+</html>

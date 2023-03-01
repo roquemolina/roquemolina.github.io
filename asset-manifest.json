@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b587a9d7.css",
+    "main.js": "/static/js/main.bed7231f.js",
+    "static/js/787.c58c114f.chunk.js": "/static/js/787.c58c114f.chunk.js",
+    "static/media/landing--1-g.gif": "/static/media/landing--1-g.c87370b21b33448c2d5b.gif",
+    "static/media/tv-Maze-gif.gif": "/static/media/tv-Maze-gif.3a4959eabdfdd8959e98.gif",
+    "static/media/balls-game-card-g.gif": "/static/media/balls-game-card-g.3f4d8c7b1fa66a2a857b.gif",
+    "static/media/Dom-ex-gif.gif": "/static/media/Dom-ex-gif.2be515be7cf03562ab27.gif",
+    "static/media/grass-nav-menu-f.png": "/static/media/grass-nav-menu-f.4ab29fa962e87186ab43.png",
+    "static/media/SPA-gif.gif": "/static/media/SPA-gif.c2fc066c17725ad21148.gif",
+    "static/media/header-img-full.jpg": "/static/media/header-img-full.a248a966b3c4abe51465.jpg",
+    "static/media/poke-api-gif.gif": "/static/media/poke-api-gif.1e24641594ee782b5e66.gif",
+    "static/media/react-crud-app-g.gif": "/static/media/react-crud-app-g.e62d02f8ab041f9645a6.gif",
+    "static/media/bg-img.jpg": "/static/media/bg-img.18e7ad957d7e59177186.jpg",
+    "static/media/bg-img2.jpg": "/static/media/bg-img2.7b34f4cab4daf9f9c59d.jpg",
+    "static/media/simple-crud-g.gif": "/static/media/simple-crud-g.bc8d119f14d2a2251b49.gif",
+    "static/media/linkedin-logo.svg": "/static/media/linkedin-logo.3287e28ce0178e152d1f93cedbc84cbb.svg",
+    "index.html": "/index.html",
+    "static/media/github-logo.svg": "/static/media/github-logo.04be58c17b3d5e9744424d414240dd85.svg",
+    "static/media/roque-port-ico.ico": "/static/media/roque-port-ico.d3ac69dbcdb4f2ab6170.ico",
+    "main.b587a9d7.css.map": "/static/css/main.b587a9d7.css.map",
+    "main.bed7231f.js.map": "/static/js/main.bed7231f.js.map",
+    "787.c58c114f.chunk.js.map": "/static/js/787.c58c114f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b587a9d7.css",
+    "static/js/main.bed7231f.js"
+  ]
+}

@@ -1,0 +1,108 @@
+@media (max-width: 1199.98px) and (min-width: 992px) {
+    .about-section .about-img img {
+        -o-object-fit: cover;
+        height: 440px;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .header .navbar-nav {
+        background-color: #ffffff;
+    }
+
+    .header .navbar #collapsibleNavbar .nav-item .nav-link {
+        padding: 10px 15px 10px;
+    }
+
+    .header .navbar-light .navbar-toggler {
+        background-color: #ffffff;
+        padding: 0;
+        height: 38px;
+        width: 45px;
+        border: none;
+    }
+
+    .header .navbar-light .navbar-toggler:focus {
+        outline: none;
+    }
+
+    .header .navbar-light .navbar-toggler-icon {
+        background-image: none;
+        height: 2px;
+        width: 24px;
+        position: relative;
+    }
+
+    .header .navbar-light .navbar-toggler-icon::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        left: 0;
+        top: -6px;
+    }
+
+    .header .navbar-light .navbar-toggler-icon::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        left: 0;
+        top: 6px;
+    }
+
+    .about-section .about-img .img-thumbnail {
+        -o-object-fit: cover;
+        border-radius: 50%;
+        display: block;
+        height: 250px;
+        margin: 0 auto 40px auto;
+        object-fit: cover;
+        width: 250px;
+    }
+
+    .gallery-section .gallery {
+        margin: 0 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-section .block h1 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .home-section .block h6 {
+        font-size: 20px;
+    }
+
+    .home-section .block h3 {
+        font-size: 15px;
+    }
+
+    .gallery-section ul.filters>li {
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .newsletter-section .newsletter-form .btn span {
+        display: none;
+    }
+
+    .gallery-section .gallery {
+        margin: 0;
+    }
+
+    .services-section .services-info {
+        margin: 0px 10px;
+    }
+}

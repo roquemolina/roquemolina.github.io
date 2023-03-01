@@ -1,0 +1,44 @@
+body {
+  background-color: blueviolet;
+  font-size: large;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: pink;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4rem;
+  background-color: purple;
+  border-radius: 5rem;
+}
+
+li {
+    margin-bottom: 10px;
+  }
+
+button {
+  border-radius: 4rem;
+  font-size: large;
+}
+
+li button {
+    font-size: 8px;
+    margin-left: 20px;
+    color: darkblue;
+    border-radius: 4rem;
+    font-size: small;
+  }
+
+.button-Add {
+    background-color: green;
+}
+
+.button-Del {
+    background-color: red;
+}
+
+.button-Modif {
+    background-color: pink;
+}

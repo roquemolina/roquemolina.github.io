@@ -1,0 +1,90 @@
+.footer,
+.newsletter-section::before,
+.blog-section .owl-carousel .owl-nav button.owl-next,
+.blog-section .owl-carousel .owl-nav button.owl-prev,
+.blog-section .card .blog-info .blog-title::before,
+.blog-section .card .blog-info .read a,
+.blog-section .card .blog-img .blog-date,
+.testimonial-section .owl-carousel .owl-dots .owl-dot.active span,
+.testimonial-section .owl-carousel .owl-dots .owl-dot:hover span,
+.testimonial-section .owl-carousel .owl-dots .owl-dot span,
+.gallery-section ul.filters>li.active,
+.gallery-section ul.filters>li:hover,
+.services-section .services-info .btn-primary,
+.services-section .services-info .btn-primary:hover,
+.services-section .services-item:hover,
+.services-section .services-item .service-circle .icon-circle,
+.services-section .services-info,
+.header .navbar #collapsibleNavbar .nav-item .nav-link::before,
+.header .navbar-light .navbar-toggler-icon::before,
+.header .navbar-light .navbar-toggler-icon::after,
+.header .navbar-light .navbar-toggler-icon,
+.mybtn2 {
+    background-color: #6c757d;
+}
+
+.footer .footer-social-links a:hover i,
+.contact-section .contact-item h5,
+.contact-section .contact-item .icon i,
+.blog-section .card .blog-info .meta span i,
+.blog .blog-item-inner .blog-info .read a:hover,
+.testimonial-section .owl-carousel .owl-nav button.owl-next span,
+.testimonial-section .owl-carousel .owl-nav button.owl-prev span,
+.services-section .services-item .icon i,
+.about-section .about-content ul li i,
+.home-section .block h6,
+.home-section .block h3,
+.section-title .heading-lines,
+.header .navbar #collapsibleNavbar .nav-item .nav-link.active,
+.header .navbar.navbar-light .navbar-brand i::before {
+    color: hsl(27, 97%, 45%);
+}
+
+.contact-section .contact-form .form-control:focus,
+.blog-section .card .blog-info .read a {
+    border-color: #6c757d;
+}
+
+.preloader .loader {
+    border-right: 5px solid #6c757d;
+}
+
+@media (max-width: 991px) {
+    .header .navbar #collapsibleNavbar .nav-item .nav-link {
+        color: #6c757d;
+    }
+
+}
+
+.mark-logo {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 12px;
+}
+
+.coffee-bean-li {
+    height: 18px;
+    width: 18px;
+}
+
+.subs-i {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.it-log {
+    height: 32px;
+    width: 32px;
+    margin-top: 10px;
+}
+
+.f-log-i {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border: solid 3px black;
+    border-radius: 20%;
+}
+.f-log-i:hover {
+    background-color: blueviolet;
+}
